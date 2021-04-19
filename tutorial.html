@@ -13128,18 +13128,14 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="kn">import</span> <span class="nn">subprocess</span>
-<span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s2">&quot;pip3&quot;</span><span class="p">,</span> <span class="s2">&quot;install&quot;</span><span class="p">,</span> <span class="s2">&quot;matplotlib&quot;</span><span class="p">],</span> <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interact</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">fixed</span>
 <span class="kn">import</span> <span class="nn">calculate_return</span>
 <span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;/usr/local/lib/python3.7/dist-packages&#39;</span><span class="p">)</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;/var/www/quant&#39;</span><span class="p">)</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;/var/www/quant/&#39;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">os</span>
 
-<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;/var/www/quant/applied_finance&#39;</span><span class="p">)</span>
+<span class="c1">#os.chdir(&#39;/var/www/quant/applied_finance&#39;)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
 <span class="c1">#import pathlib</span>
 <span class="c1">#print(pathlib.Path().absolute())</span>
@@ -13185,19 +13181,36 @@ div#notebook {
 
     
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-10-70ef1240023d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">     12</span> <span class="ansi-green-fg">import</span> os
-<span class="ansi-green-intense-fg ansi-bold">     13</span> 
-<span class="ansi-green-fg">---&gt; 14</span><span class="ansi-red-fg"> </span>os<span class="ansi-blue-fg">.</span>chdir<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;/var/www/quant/applied_finance&#39;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     15</span> print<span class="ansi-blue-fg">(</span>os<span class="ansi-blue-fg">.</span>getcwd<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     16</span> <span class="ansi-red-fg">#import pathlib</span>
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;/var/www/quant/applied_finance&#39;</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>/Users/nielseriksen/neriksen.github.io
+</pre>
 </div>
+</div>
+
+<div class="output_area">
+
+    
+
+
+
+  <div class="output_subarea output_widget_view ">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
+</div>
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;function __main__.plot_sims(y, sim_type, random_seeds, BEGINNING_SAVINGS=9041, YEARLY_INFL_ADJUSTMENT=0.0, PAY_TAXES=True, YEARS=60, GAMMA=2.5, YEARLY_RF=0.02, YEARLY_MR=0.04, COST=0.002, SIGMA=0.02837, MR=0.076)&gt;</pre>
+</div>
+
 </div>
 
 </div>
@@ -13235,7 +13248,7 @@ div#notebook {
     }
 
     var interact = new window.NbInteract({
-      spec: 'neriksen/neriksen.github.io/master',
+      spec: 'neriksen/neriksen.github.io/main',
       baseUrl: 'https://mybinder.org',
       provider: 'gh',
     })
